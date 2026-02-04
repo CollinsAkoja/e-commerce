@@ -16,7 +16,7 @@ def apply_discount(total):
     :param total:
     :return:
     """
-    discount = 10     # BUG: should be total * 0.10
+    discount = total * 0.10  # BUG: should be total * 0.10  
     final_total = total - discount
     log_message(f"Discount applied: {discount}")
     return final_total
